@@ -6,7 +6,22 @@
 body{
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor{
+    margin: 0 auto;
     padding: 1rem;
+}
+.banner{
+    min-height: 5vh;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    background-color: #2563eb;
+    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 1.2rem;
 }
 .products-grid{
     display: grid;
@@ -20,6 +35,9 @@ body{
     border: 1px solid blue;
     border-radius: 15px;
     padding: 1.5rem;
+}
+.product-card:hover{
+    border: 2px solid grey;
 }
 .product-img {
     height: 180px;
@@ -38,7 +56,6 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
-    padding.top: 1rem;
 }
 .btn-buy{
     padding: 0.5rem 1rem;
@@ -47,4 +64,11 @@ body{
     color: white;
     background-color: #2563eb;
     cursor: pointer;
+}
+.btn-buy:hover{
+    opacity: 0.8;
+    border: none;
+}
+.btn-buy:active{
+    background-color: grey;
 }
