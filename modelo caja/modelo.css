@@ -72,6 +72,13 @@ body{
 .btn-buy:active{
     background-color: grey;
 }
+.btn-disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+.btn-disabled:hover{
+    opacity: 1;
+}
 .product-badge{
     position: absolute;
     top: 1rem;
