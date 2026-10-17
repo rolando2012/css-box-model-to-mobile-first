@@ -1,0 +1,93 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: medium;
+}
+
+.contenedor{
+    padding: 1rem;
+}
+
+.product-card {
+    margin: auto;
+    max-width: 280px;
+    width: 100%;
+    border: 1px solid greenyellow;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.imagen{
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    position: relative;
+    anchor-name: --badge-flotante;
+    object-fit: cover;
+}
+
+.badge-oferta{
+    position: absolute;
+    position-anchor: --badge-flotante;
+    position-area: start start;
+    border: none;
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.15rem 0.5rem;
+}
+
+.badge-fav{
+    position: absolute;
+    position-anchor: --badge-flotante;
+    position-area: start end;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.lucide-heart:hover{
+    fill: red;
+    transform: scale(1.1);
+}
+
+.title {
+    text-align: center;
+    font-size: x-large;
+}
+
+.parrafo {
+    font-size: medium;
+}
+
+.btn {
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
