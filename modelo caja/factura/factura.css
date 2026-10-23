@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bill-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.bill-title {
+    text-align: center;
+}
+
+.bill-service {
+    list-style-type: none;
+    border: 1px solid gray;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.bill-service:hover{
+    outline: 2px solid deepskyblue;
+}
+
+.bill-service-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bill-service-desc{ 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bill-service-cost{
+    display: block;
+    text-align: right;
+}
+
+.bill-service-cont {
+    display: block;
+    text-align: left;
+}
+
+.bill-total {
+    list-style-type: none;
+    text-align: end;
+}
+
+.bill-btn {
+    border: 1px solid gray;
+    padding: 0.7rem;
+    border-radius: 12px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: whitesmoke;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.bill-btn:hover{
+    opacity: 0.6;
+}
+
+.bill-btn:active {
+    transform: scale(0.9);
+}
