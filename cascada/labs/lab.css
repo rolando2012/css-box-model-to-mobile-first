@@ -1,0 +1,24 @@
+p {
+    color: red;
+}
+
+.texto {
+    color: green;
+}
+
+.menu ul li {
+    color:aqua;
+}
+
+div #activo {
+    color: brown;
+}
+
+.item.destacado {
+    color: chartreuse;
+}
+
+/* No usar :(, una forma sucia de ganar a un id */
+.menu .item.destacado:not(#id){
+    color: black;
+}
