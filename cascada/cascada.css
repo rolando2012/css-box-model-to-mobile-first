@@ -1,0 +1,25 @@
+body {
+    color: black;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: blue;
+}
+
+a {
+    color: purple; 
+}
+
+#featured-post .post-title {
+    color: green;
+}
+
+.primary-theme .post-text {
+    color: darkgray;
+}
+
+.card-post .post-link {
+    color: coral;
+}
+
