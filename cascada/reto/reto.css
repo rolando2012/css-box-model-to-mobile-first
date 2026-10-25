@@ -1,0 +1,16 @@
+/* CSS ACTUAL (No puedes borrar ni modificar estas reglas, solo puedes agregar una nueva abajo) */
+#main-nav ul li a {
+  color: red; /* La regla que debes vencer */
+}
+
+.nav-container .menu-list #current-page .btn {
+  color: blue; /* Otra regla pesada compitiendo */
+}
+
+#home-link {
+  color: orange; /* Un ID directo al elemento */
+}
+
+#main-nav .menu-list .menu-item #home-link {
+    color: green;
+}
