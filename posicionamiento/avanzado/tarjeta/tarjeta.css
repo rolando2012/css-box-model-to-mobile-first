@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.card{
+    position: relative;
+
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 280px;
+
+    border: 1px solid aqua;
+    border-radius: 12px;
+}
+
+.tag-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    padding: 0.1rem 0.3rem;
+    font-weight: bold;
+
+    color: white;
+    background-color: blue;
+    border-radius: 16px;
+}
+
+.favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+
+    border: none;
+    background-color: transparent;
+}
+
+.icon.icon-tabler{
+    cursor: pointer;
+} 
+
+.icon.icon-tabler:hover{
+    fill: red;
+}
+
+.capa-oscura {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .capa-oscura {
+    opacity: 1;
+}
+
+.btn-vista {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: aquamarine;
+    color: #111;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .btn-vista {
+    opacity: 1;
+}
+
