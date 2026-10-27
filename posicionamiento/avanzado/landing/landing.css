@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    padding-top: 3rem;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: dodgerblue;
+    z-index: 1;
+}
+
+.btn-return {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: auto;
+    padding: 0.7rem;
+    color: inherit;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 50px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.btn-return:hover {
+    opacity: 0.8;
+    outline: 4px solid pink;
+}
+
+.menu {
+    position: sticky;
+    top: 4rem;
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    padding: 0.2rem 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background-color: dodgerblue;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.content {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    padding: 1rem;
+}
+
+.index {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-item {
+    border-bottom: 1px solid white;
+}
+
+.index-title {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.card {
+    padding: 0.5rem 1.2rem;
+    margin: 1rem 0.5rem;
+    border-radius: 12px;
+    color: darkblue;
+    background-color: whitesmoke;
+}
