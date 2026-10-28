@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    align-content: center;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.contenedor input .contenedor label {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 30;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid gray;
+    padding: 0.1rem 0.3rem;
+    background-color: gainsboro;
+}
+
+.close:hover {
+    opacity: 0.8;
+}
+
+.contenedor:has(.check:checked) ~ .overlay {
+    display: block;
+}
