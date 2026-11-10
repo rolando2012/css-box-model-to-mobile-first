@@ -1,0 +1,19 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fluid-padding: clamp(1.5rem, 4vw, 4rem);
+}
+
+body {
+    margin: 0;
+}
+
+.fluid-hero {
+    padding: var(--fluid-padding);
+}
+
+.fluid-title {
+    font-size: clamp(1.7rem, 5vw, 3.5rem);
+}
