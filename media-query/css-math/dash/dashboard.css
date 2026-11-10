@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 4rem;
+    --bg-primary: skyblue;
+    --bg-secondary: aliceblue;
+}
+
+body{
+    margin: 0;
+}
+
+.top-bar {
+    height: var(--header-height, 4rem);
+    background-color: var(--bg-primary, aqua);
+    padding: 1rem;
+}
+
+.workspace {
+    min-height: calc(100vh - var(--header-height));
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+}
