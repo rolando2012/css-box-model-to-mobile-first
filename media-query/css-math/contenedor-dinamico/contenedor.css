@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.banner-box {
+    width: min(90%, 60rem);
+    margin: auto;
+}
+
+.promo-banner {
+    padding: max(2rem, 5vh);
+}
